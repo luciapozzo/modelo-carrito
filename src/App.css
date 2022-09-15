@@ -24,6 +24,7 @@ html{
 
 body{
   overflow-x: hidden;
+  text-align: center;
 }
 
 /************UTILITIES************/
