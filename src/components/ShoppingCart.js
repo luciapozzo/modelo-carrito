@@ -4,6 +4,7 @@ import CartItem from './CartItem';
 import Product from './Product';
 import { TYPES } from "../actions/actions";
 import { shoppingInitialState, shoppingReducer } from "../reducers/reducer";
+import TotalPrice from "./TotalPrice";
 
 
 const ShoppingCart = () => {
@@ -23,9 +24,11 @@ const ShoppingCart = () => {
   }
 
   const clearCart = () => dispatch ({type:"CLEAR_CART"});
+
+ 
   
   return (
-    <>
+    <div className="shopping-cart">
     <h2>Nuestros amigurumis</h2>
     <div className="container products-container">
       {
@@ -46,9 +49,13 @@ const ShoppingCart = () => {
           
         />)
       }
-      <button className='clean-btn btn' onClick={clearCart}>LIMPIAR CARRITO</button>  
-    </div>         
-    </>
+      <TotalPrice />  
+      <button className='clean-btn btn' onClick={clearCart}>LIMPIAR CARRITO</button>
+      
+    </div>
+      
+         
+    </div>
   )
 }
 

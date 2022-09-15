@@ -7,7 +7,9 @@ export const shoppingInitialState = {
       {id: 3, name: "Mike", price: 1000, img: require('../images/mike-producto.jpg')},
       {id: 4, name: "Perrito", price: 2100, img: require('../images/perro-producto.jpg')},
       {id: 5, name: "Jirafita", price: 1800, img: require('../images/jirafa-producto.jpg')},
-      {id: 6, name: "Tucán", price: 1400, img: require('../images/tucan-producto.jpg')}
+      {id: 6, name: "Tucán", price: 1400, img: require('../images/tucan-producto.jpg')},
+      {id: 7, name: "Perrito", price: 2100, img: require('../images/perro-producto.jpg')},
+      {id: 8, name: "Jirafita", price: 1800, img: require('../images/jirafa-producto.jpg')}
     ],
     cart: []
   }

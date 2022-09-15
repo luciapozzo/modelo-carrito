@@ -6,13 +6,15 @@
   justify-content: space-between;
   color: var(--fourth-color);
   margin-bottom: 2%;
+  position: fixed;
+  z-index: 9999;
 }
 
 .menu-container{
   width: 50%;
   display: flex;
   justify-content: space-between;
-  align-content: center;   
+  align-items: center;
 }
 
   .logo-container>p{
@@ -26,11 +28,15 @@
     font-weight: 500;
   }
 
-  .cart-btn{
-    padding: 0 1%;
+  .navigation-btn{
+    background-color: var(--fourth-color);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
   }
 
-  button>.menu-item{
-    font-weight: bold;
-    font-size: 1rem;
-  }
+    .navigation-btn svg{
+      fill: var(--first-color);
+    }
+

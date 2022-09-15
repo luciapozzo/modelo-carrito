@@ -25,6 +25,7 @@ html{
 body{
   overflow-x: hidden;
   text-align: center;
+  color: var(--first-color);
 }
 
 /************UTILITIES************/
@@ -43,7 +44,7 @@ body{
   font-weight: bold;
   color: var(--fourth-color);
   font-size: 0.8rem;
-  text-shadow: 0.5px 0.5px 2px black;
+  cursor: pointer;
 }
 
   .btn:hover{
