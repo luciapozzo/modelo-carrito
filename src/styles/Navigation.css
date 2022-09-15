@@ -1,0 +1,35 @@
+.navigation-container{
+  background-color: var(--first-color);
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--fourth-color);
+}
+
+.menu-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;   
+}
+
+  .logo-container>p{
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  .menu-item{
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-weight: 500;
+  }
+
+  .cart-btn{
+    padding: 0 1%;
+  }
+
+  button>.menu-item{
+    font-weight: bold;
+    font-size: 1rem;
+  }
