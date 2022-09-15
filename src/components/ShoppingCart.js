@@ -14,9 +14,15 @@ const ShoppingCart = () => {
 
   const addToCart = (id) => dispatch ({type:"ADD_TO_CART", payload:id})
 
-  const delFromCart = () => {}
+  const delFromCart = (id, all = false) => {
+    if (all) {
+      dispatch ({type:"REMOVE_ALL_PRODUCTS", payload:id})
+    } else {
+      dispatch ({type:"REMOVE_ONE_PRODUCT", payload:id})
+    }
+  }
 
-  const clearCart = () => {}
+  const clearCart = () => dispatch ({type:"CLEAR_CART"});
   
   return (
     <>

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   color: var(--fourth-color);
+  margin-bottom: 2%;
 }
 
 .menu-container{

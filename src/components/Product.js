@@ -2,12 +2,12 @@ import '../styles/ShoppingCart.css';
 
 const Product = ({data, addToCart}) => {
 
-  const {id, name, price} = data;
+  const {id, name, price, img} = data;
 
   return (
     <div className='card product'>
       <div className='image-product'>
-        <img src={require('../images/winnie-producto.jpg')} alt="winnie" />
+        <img src={img} alt={name} />
       </div>
       <div className='description-product'>
         <h4>{name}</h4>
